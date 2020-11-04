@@ -1,0 +1,25 @@
+<div class="jumbotron">
+  <div class="container mt-4 text-center text-white"> 
+    <h1 class="display-3 text-white">Bienvenue </h1>
+
+    <p class="display-4 lead">Suivez nos événements </p>
+  </div>
+
+    <div class='container '>
+        <div class='card-columns d-flex justify-content-around mt-4' >
+            <% @events.each do |event| %>
+                <div class="card bg-light mb-3" style="max-width: 18rem; height: 20rem;">
+
+                    <div class="card-header">AUTEUR: <%= event.admin.email %></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Titre: <%= event.title %></h5>
+                        <p class="card-text m-2">
+                            <a class="btn btn-primary " <%= link_to "Voir le event", event_path(event) %></a> 
+                        </p>
+                    </div>
+                </div>
+            <% end %> 
+        </div>
+    </div>    
+
+</div>
