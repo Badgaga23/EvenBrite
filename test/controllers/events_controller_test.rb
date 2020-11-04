@@ -6,6 +6,7 @@ class EventsControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+<<<<<<< HEAD
   test "should get show" do
     get events_show_url
     assert_response :success
@@ -26,4 +27,6 @@ class EventsControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+=======
+>>>>>>> 2a19edc3d9c721bf5ac1fbd353b42616d01da3f5
 end
