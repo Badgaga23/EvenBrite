@@ -2,14 +2,11 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.1'
-<<<<<<< HEAD
 gem 'devise'
 gem 'activerecord-reset-pk-sequence'
 gem 'simple_form'
-=======
 
 gem 'faker'
->>>>>>> 2a19edc3d9c721bf5ac1fbd353b42616d01da3f5
 gem 'table_print'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
@@ -62,6 +59,5 @@ group :test do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
 gem 'dotenv-rails'
-gem 'devise'
