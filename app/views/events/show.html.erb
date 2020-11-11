@@ -26,7 +26,13 @@
             <li class="list-group-item">
             CONTENU:<br><%= @event.description %><br>
             </li>
+            <li class="list-group-item">
+            <% if (current_user != @event.admin) && (!@event.users.include?(current_user)) %>
+                  <a class="btn btn-primary "<%= link_to "Participer à l'évènement", new_event_attendance_path(@event.id) %></a> 
+                <% end %>
+            </li>
         </ul>
     </p>
 </div>
+
     
